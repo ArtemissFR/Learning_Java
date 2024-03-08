@@ -16,7 +16,7 @@ import jakarta.servlet.annotation.WebServlet;
 public class UserList extends HttpServlet {
     final String URL="jdbc:mysql://localhost/tomcat";  //  final String URL = "jdbc:mysql://127.0.0.1/tomcat";
     final String USER="tomcat";
-    final String PWD="password";
+    final String PWD="louis";
     final String DRIVER="com.mysql.cj.jdbc.Driver";
     Connection connection = null;
 
