@@ -36,4 +36,15 @@
      <url-pattern>/daytime</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+      <servlet-name>ListeUtilisateursServlet</servlet-name>
+      <servlet-class>ListeUtilisateursServlet</servlet-class>
+  </servlet>
+    
+  <servlet-mapping>
+       <servlet-name>ListeUtilisateursServlet</servlet-name>
+      <url-pattern>/listeUtilisateurs</url-pattern>
+  </servlet-mapping>
+
+
 </web-app>
