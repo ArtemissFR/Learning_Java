@@ -1,13 +1,13 @@
-import java.io.;
-import java.util.;
-import java.sql.;
+import java.io.*;
+import java.util.*;
+import java.sql.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
-import jakarta.servlet.;
+import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.WebServlet;
 
@@ -16,7 +16,7 @@ import jakarta.servlet.annotation.WebServlet;
 public class UserList extends HttpServlet {
     final String URL="jdbc:mysql://localhost/tomcat";  //  final String URL = "jdbc:mysql://127.0.0.1/tomcat";
     final String USER="tomcat";
-    final String PWD="louis";
+    final String PWD="password";
     final String DRIVER="com.mysql.cj.jdbc.Driver";
     Connection connection = null;
 
@@ -37,7 +37,7 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
         ResultSetMetaData metaData = resultSet.getMetaData();
         int nombreColonnes = metaData.getColumnCount();
         PrintWriter out = response.getWriter();
-        out.println("<html>\n<head>\n<title>List User</title>\n</head>\n<body>\n<table border="1">\n<thead>\n<tr>\n<th>FirstName</th>\n<th>LastName</th>\n</tr>\n</thead>\n<tbody>");
+        out.println("<html>\n<head>\n<title>List User</title>\n</head>\n<body>\n<table border=\"1\">\n<thead>\n<tr>\n<th>FirstName</th>\n<th>LastName</th>\n</tr>\n</thead>\n<tbody>");
         while (resultSet.next()) {
             out.println("<tr>");
             for (int i = 1; i <= nombreColonnes; i++) {
