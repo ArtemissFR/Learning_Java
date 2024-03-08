@@ -54,8 +54,22 @@
             <% } %>
         </table>
         <br>
+
         <h2>Liste des utilisateurs :</h2>
-        <jsp:include page="/ListeUtilisateursServlet" />
+        <table>
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <!-- Ajoutez d'autres en-têtes selon votre table -->
+            </tr>
+            <% for (User user : (List<User>)request.getAttribute("userList")) { %>
+                <tr>
+                    <td><%= user.getFirstname() %></td>
+                    <td><%= user.getLastname() %></td>
+                    <!-- Ajoutez d'autres champs selon votre table -->
+                </tr>
+            <% } %>
+        </table>
 
         <img src="https://www.pngmart.com/files/12/Kangaroo-Roger-Tekken-PNG-File.png" alt="Renault Kangoo">
     </div>
