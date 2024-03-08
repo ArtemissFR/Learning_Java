@@ -28,13 +28,13 @@
   </description>
 
   <servlet>
-      <servlet-name>listuser</servlet-name>
-      <servlet-class>listuser</servlet-class>
+      <servlet-name>UserList</servlet-name>
+      <servlet-class>UserList</servlet-class>
   </servlet>
     
   <servlet-mapping>
-       <servlet-name>listuser</servlet-name>
-      <url-pattern>/listuser</url-pattern>
+       <servlet-name>UserList</servlet-name>
+      <url-pattern>/UserList</url-pattern>
   </servlet-mapping>
 
 
