@@ -1,0 +1,6 @@
+<!-- MySQL Connector/J -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.23</version> <!-- Assurez-vous de vérifier la version la plus récente -->
+</dependency>
