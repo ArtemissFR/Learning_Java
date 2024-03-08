@@ -28,15 +28,6 @@
   </description>
 
   <servlet>
-     <servlet-name>daytime</servlet-name>
-     <servlet-class>daytime</servlet-class>
-  </servlet>
-  <servlet-mapping>
-     <servlet-name>daytime</servlet-name>
-     <url-pattern>/daytime</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
       <servlet-name>ListeUtilisateursServlet</servlet-name>
       <servlet-class>ListeUtilisateursServlet</servlet-class>
   </servlet>
