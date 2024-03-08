@@ -53,6 +53,9 @@
                 </tr>
             <% } %>
         </table>
+        <br>
+        <h2>Liste des utilisateurs :</h2>
+        <jsp:include page="/ListeUtilisateursServlet" />
 
         <img src="https://www.pngmart.com/files/12/Kangaroo-Roger-Tekken-PNG-File.png" alt="Renault Kangoo">
     </div>
