@@ -60,13 +60,11 @@
             <tr>
                 <th>Prénom</th>
                 <th>Nom</th>
-                <!-- Ajoutez d'autres en-têtes selon votre table -->
             </tr>
             <% for (User user : (List<User>)request.getAttribute("userList")) { %>
                 <tr>
                     <td><%= user.getFirstname() %></td>
                     <td><%= user.getLastname() %></td>
-                    <!-- Ajoutez d'autres champs selon votre table -->
                 </tr>
             <% } %>
         </table>
