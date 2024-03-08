@@ -55,20 +55,6 @@
         </table>
         <br>
 
-        <h2>Liste des utilisateurs :</h2>
-        <table>
-            <tr>
-                <th>Prénom</th>
-                <th>Nom</th>
-            </tr>
-            <% for (User user : (List<User>)request.getAttribute("userList")) { %>
-                <tr>
-                    <td><%= user.getFirstname() %></td>
-                    <td><%= user.getLastname() %></td>
-                </tr>
-            <% } %>
-        </table>
-
         <img src="https://www.pngmart.com/files/12/Kangaroo-Roger-Tekken-PNG-File.png" alt="Renault Kangoo">
     </div>
 
