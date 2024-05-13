@@ -11,9 +11,9 @@ import java.util.List;
 import com.votreentreprise.models.User;
 
 public class DatabaseUtil {
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/votreDB";
-    private static final String JDBC_USER = "votreUtilisateur";
-    private static final String JDBC_PASSWORD = "votreMotDePasse";
+    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/tomcat";
+    private static final String JDBC_USER = "tomcat";
+    private static final String JDBC_PASSWORD = "tomcat";
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
