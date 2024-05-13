@@ -6,6 +6,6 @@
 <body>
     <h1>Bienvenue sur l'application web</h1>
     <a href="inscription.jsp">Inscription</a>
-    <a href="utilisateurs">Liste des utilisateurs</a>
+    <a href="utilisateurs.jsp">Liste des utilisateurs</a>
 </body>
 </html>
